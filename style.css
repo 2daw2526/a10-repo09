@@ -1,0 +1,238 @@
+/* Estilo general */
+html, body {
+  overflow: hidden; /* Oculta el scroll en toda la página */
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Asegura que el body ocupe toda la altura de la ventana */
+  font-family: 'Arial', sans-serif; /* Establece una fuente más moderna */
+  background: #f4f4f9; /* Fondo suave para la página */
+}
+
+/* Contenedor principal */
+@media (min-width: 900px) {
+.cuerpo {
+  background-image: url(./images/fondoPrueba21a9.jpg);
+  background-size: contain; /* Mantiene la relación de aspecto de la imagen */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-color: black; /* Color de fondo para las tiras negras */
+  height: 100vh; /* Altura del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+                                       
+  /* filter: brightness(0.7); */ /* Atenúa el fondo para mejor contraste */
+  position: relative;
+}
+
+
+@media (min-width: 2000px) {
+  .cuerpo {
+    background-image: url(./images/fondoGrande.jpg);
+    background-size: contain; /* Mantiene la relación de aspecto de la imagen */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-color: black; /* Color de fondo para las tiras negras */
+    height: 100vh; /* Altura del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+                                         
+    /* filter: brightness(0.7); */ /* Atenúa el fondo para mejor contraste */
+    position: relative;
+  
+  }
+  }
+
+/* Menú principal */
+#Menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para hacer el texto más legible */
+  letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  margin: 20px; /* Más espacio entre botones */
+  padding: 10px 20px; /* Botones más grandes */
+  font-size: 1.5em;/* Tamaño de texto más adecuado */
+  color: white;
+  background: linear-gradient(135deg, #ff8000, #ffcc00, #ff8000); /* Gradiente moderno */
+  border: none;
+  border-radius: 30px; /* Bordes más redondeados */
+  text-decoration: none;
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 3px; /* Espaciado entre letras */
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s ease-in-out, color 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Efecto hover */
+.btn:hover {
+  transform: scale(1.05); /* Escala un poco el botón */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+  background: linear-gradient(135deg, #ffcc00, #ff8000, #ffcc00); /* Invierte el gradiente */
+  animation: pulse 1s infinite; /* Animación de pulso */
+  color: #333; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Efecto al hacer clic */
+.btn:active {
+  transform: scale(0.95); /* Reduce el tamaño al hacer clic */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+  background: linear-gradient(135deg, #ffcc00, #ff8000, #ffcc00); /* Efecto de color consistente */
+  color: #fff; /* Asegura que el texto sea blanco al hacer clic */
+}
+
+/* Agrega una animación de entrada suave para el contenido */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Animación de desvanecimiento */
+}
+.card{
+  background-color: transparent;
+}
+
+.ajustes{
+  font-size: 5em;
+}
+.card img {
+  image-rendering: pixelated;
+}
+
+.card h5 {
+  text-transform: capitalize;
+}
+.list-group-item{
+  border: none;
+  font-weight: bold;
+ text-align: center;
+}
+.habilidad{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  
+}
+.card-title{
+  font-weight: bold;
+}
+.card-body{
+  text-align: center;
+}
+.card-link{
+  text-decoration: none;
+  background-color: red;
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.card-linkCarrito{
+  text-decoration: none;
+  background-color: greenyellow;
+  border-radius: 20px;
+  padding: 5px;
+  color: #7A288A;
+  font-weight: bolder;
+  font-size: 14px;
+}
+.deck{
+  margin-top: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.enlace{
+  text-decoration: none;
+  padding: 10px;
+}
+.player{
+  position: absolute;
+  margin-left: -100px;
+  margin-top: 40px;
+  width: 300px;
+  height: 600px;
+  background-image: url(./images/goku_normal.webp);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y:center;
+}
+.enemigo{
+  position: absolute;
+  
+  margin-top: 100px;
+  margin-left: 1050px;
+  width: 300px;
+  height: 800px;
+  background-image: url(./images/cellBatalla.webp);
+  background-repeat: no-repeat;
+}
+h4{
+  background-color: greenyellow;
+}
+.vidaP{
+  position: absolute;
+  background-color:greenyellow ;
+  width: 150px;
+  text-align: center;
+  margin-left: -30px;
+  margin-top: 30px;
+}
+.miboton{
+  position: fixed; /* o absolute según tu necesidad */
+  z-index: 9999;   /* Valor alto para asegurar que esté encima */
+  /* Opcional: ajusta posición */
+  top: 20px;
+  right: 20px;
+}
+#a{
+  position: absolute;
+  margin: 0, center;
+  margin-top: 400px;
+  margin-left: 1000px;
+}
+.victoria{
+  position: absolute;
+  margin: 0, center;
+  margin-top: 400px;
+  margin-left: 1000px;
+}
